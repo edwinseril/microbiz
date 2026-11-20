@@ -3,28 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Prison Witnessing - Refresher Training RSVP</title>
+  <title>Micro Business Witnessing - Catch-Up Meeting &amp; Progress Report RSVP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg-page: #f4f7fb;
+      --bg-page: #f4f8f4;
       --bg-card: #ffffff;
-      --primary-navy: #0f294a;
-      --primary-royal: #1d4ed8;
-      --primary-steel: #2563eb;
+      --primary-green-dark: #14532d;
+      --primary-green: #2e6f16;
+      --primary-green-bright: #437c17;
       --accent-green: #059669;
       --accent-green-bg: #ecfdf5;
-      --accent-amber: #d97706;
-      --accent-amber-bg: #fffbeb;
       --accent-red: #dc2626;
       --accent-red-bg: #fef2f2;
       --text-main: #0f172a;
       --text-muted: #475569;
-      --border-light: #e2e8f0;
-      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
-      --shadow-md: 0 10px 25px -5px rgba(15, 41, 74, 0.08), 0 4px 10px -6px rgba(15, 41, 74, 0.04);
+      --border-light: #dce7dc;
+      --shadow-sm: 0 1px 3px rgba(20, 83, 45, 0.06);
+      --shadow-md: 0 10px 25px -5px rgba(20, 83, 45, 0.12), 0 4px 10px -6px rgba(20, 83, 45, 0.06);
       --radius-lg: 16px;
       --radius-md: 12px;
       --radius-sm: 10px;
@@ -36,27 +34,21 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      -webkit-tap-highlight-color: rgba(29, 78, 216, 0.12);
+      -webkit-tap-highlight-color: rgba(67, 124, 23, 0.14);
     }
 
     html {
       -webkit-text-size-adjust: 100%;
-      width: 100%;
-      max-width: 100%;
-      overflow-x: hidden;
     }
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       background-color: var(--bg-page);
       color: var(--text-main);
-      line-height: 1.5;
-      padding: 18px 12px 44px;
+      line-height: 1.55;
+      padding: 20px 14px 48px;
       -webkit-font-smoothing: antialiased;
-      width: 100%;
-      max-width: 100%;
       overflow-x: hidden;
-      overflow-wrap: anywhere;
     }
 
     button,
@@ -71,20 +63,18 @@
     .container {
       max-width: 820px;
       width: 100%;
-      min-width: 0;
       margin: 0 auto;
     }
 
-    /* Hero Banner */
     .hero-card {
-      background: linear-gradient(135deg, #0f294a 0%, #1e40af 65%, #2563eb 100%);
+      background: linear-gradient(135deg, #14532d 0%, #2e6f16 55%, #437c17 100%);
       color: #ffffff;
       border-radius: var(--radius-lg);
-      padding: 28px 24px;
+      padding: 32px 28px;
       box-shadow: var(--shadow-md);
       position: relative;
       overflow: hidden;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .hero-card::after {
@@ -92,9 +82,9 @@
       position: absolute;
       top: -40%;
       right: -10%;
-      width: 280px;
-      height: 280px;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, transparent 70%);
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.16) 0%, transparent 70%);
       border-radius: 50%;
       pointer-events: none;
     }
@@ -103,68 +93,66 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      max-width: 100%;
-      background: rgba(255, 255, 255, 0.15);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      backdrop-filter: blur(6px);
-      padding: 5px 11px;
+      background: #ffffff;
+      color: var(--primary-green-dark);
+      padding: 5px 13px;
       border-radius: 999px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
     }
 
     .badge-dot {
-      width: 7px;
-      height: 7px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      background-color: #34d399;
+      background-color: #437c17;
       flex-shrink: 0;
     }
 
     .hero-title {
-      font-size: 1.65rem;
+      font-size: 1.75rem;
       font-weight: 800;
-      line-height: 1.24;
+      line-height: 1.25;
       letter-spacing: -0.02em;
+      color: #ffffff;
       margin-bottom: 10px;
     }
 
     .hero-subtitle {
-      font-size: 0.94rem;
-      color: #dbeafe;
+      font-size: 0.98rem;
+      color: #f0fdf4;
       max-width: 650px;
       font-weight: 400;
     }
 
-    /* Event Details Grid */
     .details-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .detail-box {
       background: var(--bg-card);
       border: 1px solid var(--border-light);
       border-radius: var(--radius-md);
-      padding: 15px;
+      padding: 16px;
       box-shadow: var(--shadow-sm);
       display: flex;
       align-items: flex-start;
       gap: 12px;
-      min-width: 0;
     }
 
     .detail-icon {
-      width: 38px;
-      height: 38px;
+      width: 40px;
+      height: 40px;
       border-radius: 10px;
-      background: #eff6ff;
-      color: var(--primary-royal);
+      background: #ecfdf5;
+      color: var(--primary-green);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -181,58 +169,62 @@
     }
 
     .detail-value {
-      font-size: 0.94rem;
+      font-size: 0.95rem;
       font-weight: 700;
       color: var(--text-main);
     }
 
     .detail-sub {
-      font-size: 0.79rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
       margin-top: 2px;
     }
 
-    /* Topic Callout */
     .topic-card {
       background: var(--bg-card);
       border: 1px solid var(--border-light);
-      border-left: 4px solid var(--primary-royal);
+      border-left: 4px solid var(--primary-green-bright);
       border-radius: var(--radius-md);
-      padding: 15px 18px;
-      margin-bottom: 18px;
+      padding: 18px 20px;
+      margin-bottom: 20px;
       box-shadow: var(--shadow-sm);
     }
 
     .topic-label {
-      font-size: 0.72rem;
+      font-size: 0.75rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: var(--primary-royal);
-      margin-bottom: 4px;
+      color: var(--primary-green);
+      margin-bottom: 10px;
     }
 
-    .topic-text {
-      font-size: 0.96rem;
-      font-weight: 600;
+    .topic-list {
+      padding-left: 20px;
       color: var(--text-main);
+      font-size: 0.94rem;
+      font-weight: 500;
+      display: grid;
+      gap: 6px;
     }
 
-    /* Main Content Two-Column Layout */
+    .topic-list li {
+      padding-left: 4px;
+    }
+
     .main-grid {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
-      gap: 16px;
-      margin-bottom: 18px;
+      gap: 18px;
+      margin-bottom: 20px;
     }
 
     .card {
       background: var(--bg-card);
       border: 1px solid var(--border-light);
       border-radius: var(--radius-lg);
-      padding: 20px 18px;
+      padding: 22px 20px;
       box-shadow: var(--shadow-sm);
-      min-width: 0;
     }
 
     .card-header {
@@ -247,9 +239,9 @@
     }
 
     .card-title {
-      font-size: 1.08rem;
+      font-size: 1.1rem;
       font-weight: 700;
-      color: var(--primary-navy);
+      color: var(--primary-green-dark);
     }
 
     .roster-actions {
@@ -263,7 +255,7 @@
       min-height: 36px;
       border: 1px solid #cbd5e1;
       background: #f8fafc;
-      color: var(--primary-navy);
+      color: var(--primary-green-dark);
       border-radius: 999px;
       padding: 6px 14px;
       font-family: inherit;
@@ -276,11 +268,10 @@
     }
 
     .btn-refresh:hover {
-      background: #eff6ff;
-      border-color: var(--primary-royal);
+      background: #ecfdf5;
+      border-color: var(--primary-green-bright);
     }
 
-    /* Form Elements (16px+ font-size prevents mobile Safari/Chrome auto-zoom) */
     .form-group {
       margin-bottom: 16px;
     }
@@ -297,7 +288,6 @@
     select,
     textarea {
       width: 100%;
-      max-width: 100%;
       padding: 12px 14px;
       border: 1px solid #cbd5e1;
       border-radius: var(--radius-sm);
@@ -321,8 +311,8 @@
     select:focus,
     textarea:focus {
       outline: none;
-      border-color: var(--primary-royal);
-      box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+      border-color: var(--primary-green-bright);
+      box-shadow: 0 0 0 3px rgba(67, 124, 23, 0.16);
     }
 
     textarea {
@@ -330,7 +320,6 @@
       min-height: 84px;
     }
 
-    /* Status Radio Cards */
     .radio-group {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -339,7 +328,6 @@
 
     .radio-option {
       position: relative;
-      min-width: 0;
     }
 
     .radio-option input[type="radio"] {
@@ -396,8 +384,8 @@
     .btn-submit {
       width: 100%;
       min-height: 50px;
-      padding: 14px 18px;
-      background: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
+      padding: 14px 20px;
+      background: linear-gradient(135deg, #2e6f16 0%, #14532d 100%);
       color: #ffffff;
       border: none;
       border-radius: var(--radius-sm);
@@ -406,13 +394,13 @@
       font-weight: 700;
       cursor: pointer;
       transition: transform 0.1s ease, box-shadow 0.15s ease;
-      box-shadow: 0 4px 12px rgba(29, 78, 216, 0.25);
+      box-shadow: 0 4px 12px rgba(20, 83, 45, 0.25);
       margin-top: 6px;
     }
 
     .btn-submit:hover {
-      background: linear-gradient(135deg, #1e40af 0%, #172554 100%);
-      box-shadow: 0 6px 16px rgba(29, 78, 216, 0.32);
+      background: linear-gradient(135deg, #255a12 0%, #0f3f22 100%);
+      box-shadow: 0 6px 16px rgba(20, 83, 45, 0.32);
     }
 
     .btn-submit:active {
@@ -424,7 +412,6 @@
       cursor: not-allowed;
     }
 
-    /* Alert / Confirmation Banner */
     .alert-box {
       display: none;
       margin-top: 16px;
@@ -446,19 +433,19 @@
       color: #991b1b;
     }
 
-    /* Roster List */
     .roster-count {
       font-size: 0.78rem;
       font-weight: 700;
-      background: #eff6ff;
-      color: var(--primary-royal);
+      background: #ecfdf5;
+      color: var(--primary-green-dark);
       padding: 5px 11px;
       border-radius: 999px;
+      border: 1px solid #bbf7d0;
     }
 
     .roster-list {
       list-style: none;
-      max-height: 380px;
+      max-height: 440px;
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
       padding-right: 4px;
@@ -470,7 +457,7 @@
       align-items: center;
       gap: 10px;
       min-height: 44px;
-      padding: 10px 8px;
+      padding: 10px 10px;
       border-bottom: 1px solid #f1f5f9;
       font-size: 0.9rem;
     }
@@ -511,85 +498,22 @@
       border: 1px solid #fecaca;
     }
 
-    /* Quick Links / Toolboxes */
-    .links-section {
-      background: var(--bg-card);
-      border: 1px solid var(--border-light);
-      border-radius: var(--radius-lg);
-      padding: 20px 18px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .links-title {
-      font-size: 0.96rem;
-      font-weight: 700;
-      color: var(--primary-navy);
-      margin-bottom: 12px;
-    }
-
-    .links-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-
-    .toolbox-link {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      min-height: 56px;
-      padding: 14px 16px;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border-light);
-      background: #f8fafc;
-      text-decoration: none;
-      color: var(--text-main);
-      transition: all 0.15s ease;
-      min-width: 0;
-    }
-
-    .toolbox-link:hover,
-    .toolbox-link:active {
-      border-color: var(--primary-royal);
-      background: #eff6ff;
-    }
-
-    .toolbox-info strong {
-      display: block;
-      font-size: 0.92rem;
-      color: var(--primary-navy);
-    }
-
-    .toolbox-info span {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-    }
-
-    .arrow-icon {
-      color: var(--primary-royal);
-      font-weight: 700;
-      font-size: 1.15rem;
-      flex-shrink: 0;
-    }
-
-    /* Mobile Portrait & Small Screens */
     @media (max-width: 720px) {
       body {
-        padding: 12px 10px 36px;
+        padding: 14px 12px 40px;
       }
 
       .hero-card {
-        padding: 22px 18px;
+        padding: 24px 20px;
         border-radius: 14px;
       }
 
       .hero-title {
-        font-size: 1.32rem;
+        font-size: 1.4rem;
       }
 
       .hero-subtitle {
-        font-size: 0.89rem;
+        font-size: 0.92rem;
       }
 
       .details-grid {
@@ -598,7 +522,7 @@
       }
 
       .detail-box {
-        padding: 13px 14px;
+        padding: 14px;
         align-items: center;
       }
 
@@ -608,92 +532,36 @@
       }
 
       .card {
-        padding: 18px 15px;
+        padding: 18px 16px;
         border-radius: 14px;
-      }
-
-      .links-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
       }
 
       .roster-list {
         max-height: none;
         overflow-y: visible;
-        padding-right: 0;
       }
     }
 
-    /* Very Small Phones (320px - 420px wide) */
-    @media (max-width: 420px) {
-      body {
-        padding: 10px 8px 32px;
-      }
-
-      .hero-card {
-        padding: 18px 14px;
-      }
-
-      .hero-title {
-        font-size: 1.2rem;
-      }
-
-      .badge {
-        font-size: 0.68rem;
-        padding: 4px 10px;
-      }
-
+    @media (max-width: 400px) {
       .radio-group {
         grid-template-columns: 1fr;
-      }
-
-      .radio-tile {
-        min-height: 54px;
-        padding: 10px 12px;
-      }
-
-      .roster-item {
-        padding: 9px 4px;
-        font-size: 0.86rem;
-      }
-
-      .status-pill {
-        font-size: 0.68rem;
-        padding: 3px 8px;
-      }
-
-      .toolbox-link {
-        padding: 12px 13px;
-      }
-    }
-
-    /* Mobile Landscape */
-    @media (max-height: 500px) and (orientation: landscape) {
-      .details-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .radio-group {
-        grid-template-columns: 1fr 1fr;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Hero Header -->
     <header class="hero-card">
       <div class="badge">
         <span class="badge-dot"></span>
-        Parkwood Congregation • RSVP Portal
+        Micro Business Witnessing • RSVP Portal
       </div>
-      <h1 class="hero-title">Prison Witnessing — Refresher Training for Internal Volunteers</h1>
+      <h1 class="hero-title">Catch-Up Meeting and Progress Report</h1>
       <p class="hero-subtitle">
-        Please confirm your attendance below for the upcoming clerical duties handover and volunteer refresher session.
+        Please confirm your attendance below for our Micro Business Witnessing catch-up meeting and team progress review.
       </p>
     </header>
 
-    <!-- Meeting Details Cards -->
     <section class="details-grid" aria-label="Meeting Schedule Details">
       <div class="detail-box">
         <div class="detail-icon">
@@ -706,8 +574,8 @@
         </div>
         <div>
           <div class="detail-label">Day &amp; Date</div>
-          <div class="detail-value">Sunday, Nov 22, 2026</div>
-          <div class="detail-sub">11-22-2026</div>
+          <div class="detail-value">Sunday, Nov 29, 2026</div>
+          <div class="detail-sub">11-29-2026</div>
         </div>
       </div>
 
@@ -720,8 +588,8 @@
         </div>
         <div>
           <div class="detail-label">Time</div>
-          <div class="detail-value">10:00 – 11:00 AM</div>
-          <div class="detail-sub">Right After Weekend Meeting</div>
+          <div class="detail-value">4:00 PM – 5:00 PM</div>
+          <div class="detail-sub">Afternoon Session</div>
         </div>
       </div>
 
@@ -734,23 +602,26 @@
         </div>
         <div>
           <div class="detail-label">Venue</div>
-          <div class="detail-value">Kingdom Hall Library</div>
-          <div class="detail-sub">Parkwood Congregation</div>
+          <div class="detail-value">Rooftop, Redondo's Residence</div>
+          <div class="detail-sub">Phase 4, Payatas</div>
         </div>
       </div>
     </section>
 
-    <!-- Agenda / Topic -->
     <section class="topic-card">
       <div class="topic-label">Session Topic</div>
-      <div class="topic-text">
-        Handover and Refresher Training of Clerical Duties to Internal Volunteers of Parkwood Congregation
-      </div>
+      <ol class="topic-list">
+        <li>Mga nagawa na sa territory mapping.</li>
+        <li>Mga nagawa na sa Conversation Stoppers</li>
+        <li>Accomplishment ng Video Production Team</li>
+        <li>Content Management sa Proposed Google Site</li>
+        <li>Database Access ng mga Volunteers</li>
+        <li>Open Discussion on Project Blockers</li>
+        <li>Pag-usapan kung kailan gagawin ang Workshop/Training ng mga Volunteers.</li>
+      </ol>
     </section>
 
-    <!-- Main Form & Roster Grid -->
     <div class="main-grid">
-      <!-- RSVP Form -->
       <section class="card">
         <div class="card-header">
           <h2 class="card-title">Confirm Attendance</h2>
@@ -765,7 +636,7 @@
               class="filter-input"
               placeholder="Type to filter name..."
               autocomplete="off"
-              aria-label="Filter volunteer name"
+              aria-label="Filter attendee name"
             />
             <select id="volunteerSelect" required>
               <option value="" disabled selected>-- Choose your name from the list --</option>
@@ -779,7 +650,7 @@
                 <input type="radio" name="attendanceStatus" value="Confirmed" checked />
                 <div class="radio-tile">
                   <strong>Will Attend</strong>
-                  <span>Sun, 11-22-2026 • 10:00 AM</span>
+                  <span>Sun, 11-29-2026 • 4:00 PM</span>
                 </div>
               </label>
 
@@ -795,7 +666,7 @@
 
           <div class="form-group">
             <label for="notesInput">Remarks / Questions (Optional)</label>
-            <textarea id="notesInput" placeholder="Any notes or questions ahead of the refresher training..."></textarea>
+            <textarea id="notesInput" placeholder="Any notes, progress updates, or questions ahead of the meeting..."></textarea>
           </div>
 
           <button type="submit" class="btn-submit" id="submitBtn">Submit RSVP Confirmation</button>
@@ -804,71 +675,44 @@
         </form>
       </section>
 
-      <!-- Live Roster Checklist -->
       <section class="card">
         <div class="card-header">
-          <h2 class="card-title">Invited Volunteers</h2>
+          <h2 class="card-title">Attendees</h2>
           <div class="roster-actions">
             <button type="button" class="btn-refresh" id="refreshBtn">Refresh</button>
-            <span class="roster-count" id="confirmedCounter">0 / 12 Confirmed</span>
+            <span class="roster-count" id="confirmedCounter">0 / 18 Confirmed</span>
           </div>
         </div>
         <ul class="roster-list" id="rosterList"></ul>
       </section>
     </div>
-
-    <!-- Toolbox Quick Links -->
-    <section class="links-section">
-      <h2 class="links-title">Quick Access Toolboxes</h2>
-      <div class="links-grid">
-        <a
-          href="https://sites.google.com/view/parkwood-congregation/prison-witnessing-portal"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="toolbox-link"
-        >
-          <div class="toolbox-info">
-            <strong>Prison Witnessing Volunteer Toolbox</strong>
-            <span>Schedules, guidelines &amp; volunteer portal</span>
-          </div>
-          <span class="arrow-icon">&rarr;</span>
-        </a>
-
-        <a
-          href="https://script.google.com/macros/s/AKfycbzPJg46_G1J2y8-1Nc_2tRx96qd7GW9YrVatDW8k-3I0nqkxePjd7iMtpttacHaQhm-jA/exec"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="toolbox-link"
-        >
-          <div class="toolbox-info">
-            <strong>Prison Witnessing Clerk Toolbox</strong>
-            <span>Clerical utilities &amp; administrative tools</span>
-          </div>
-          <span class="arrow-icon">&rarr;</span>
-        </a>
-      </div>
-    </section>
   </div>
 
   <script>
-    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw2Dm_2c7nrt9rdJlgL9XzP1VS0GzaK_siCYWS447nerkFkcItRjPAULDPrVg4bop7z/exec";
+    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyssdybKvcpGnlvIy5HvdSINiUIxqVWoR8cZhWF67tn_MnlgHVCfUJqrDTdDy-_gxIhWw/exec";
 
     const VOLUNTEERS = [
-      "Alexis Redondo",
-      "Archie Bolima",
+      "Andrea Redondo",
+      "Angie Baylon",
+      "Allissa Cayabyab",
+      "Candice Racal",
       "CJ Ronquillo",
-      "Ricky Cusipag",
+      "Edna Baldon",
+      "Felicia Dawn Manlapaz",
+      "Viligen Bonifacio",
       "Jabis Cerenio",
-      "Jaime Rabanos",
+      "Jahrish Repomanta",
+      "Jedah May Diaz",
+      "Jelo Diaz",
       "Jerick Rodriguez",
       "Jhimwell Cerenio",
-      "Joedel Gerona",
       "Levi Rabanos",
-      "Norlito Garcia",
-      "Seth Malinao"
+      "Mia Brusola",
+      "Nathalie Shane Racal",
+      "Nica Consuelo"
     ];
 
-    const LOCAL_STORAGE_KEY = "pw_refresher_rsvp_11_22_2026";
+    const LOCAL_STORAGE_KEY = "mbw_catchup_rsvp_11_29_2026";
     let statusMap = {};
 
     const nameFilter = document.getElementById("nameFilter");
@@ -1114,7 +958,7 @@
 
       if (syncedViaJsonp) {
         showAlert(
-          `Thank you, ${selectedName}! Your response (${selectedStatus}) has been recorded for Sunday, 11-22-2026 at 10:00 AM.`,
+          `Thank you, ${selectedName}! Your response (${selectedStatus}) has been recorded for Sunday, 11-29-2026 at 4:00 PM.`,
           true
         );
       } else {
@@ -1126,13 +970,13 @@
           url.searchParams.set("notes", notes);
           await fetch(url.toString(), { mode: "no-cors", redirect: "follow" });
           showAlert(
-            `Thank you, ${selectedName}! Your response (${selectedStatus}) has been submitted for Sunday, 11-22-2026 at 10:00 AM.`,
+            `Thank you, ${selectedName}! Your response (${selectedStatus}) has been submitted for Sunday, 11-29-2026 at 4:00 PM.`,
             true
           );
         } catch (error) {
           console.error(error);
           showAlert(
-            `Recorded locally for ${selectedName}, but could not reach the Google Sheet. Please check your connection or deployment.`,
+            `Recorded locally for ${selectedName}, but could not reach the spreadsheet backend. Please check your connection or deployment.`,
             false
           );
         }
